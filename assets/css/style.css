@@ -378,7 +378,7 @@ Button
 }
 .btn-primary{
     color: #fff;
-    background-color: #00a885;
+    background-color: #FF0068;
     border:1px solid;
     border-color: #00a885;
 
@@ -386,7 +386,7 @@ Button
 .btn-primary:hover{
     background-color: #eee;
     border-color: #eee;
-    color:#00a885;
+    color:#FF0068;
 }
 
 .btn-default{
@@ -837,9 +837,10 @@ Nav Menu style
 .navbar-brand {
     padding: 25px 15px;
 }
-.navbar-brand > img {
+.navbar-brand img {
     display: block;
-    width: 80%;
+    width: 150px;
+    height: auto;
 }
 
 .navbar-callus li a{
@@ -868,6 +869,31 @@ Nav Menu style
 /*
 Home Section style
 ==================*/
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+  }
+  .service-list li {
+    cursor: pointer;
+  }
+  .service-info {
+    display: none;
+    border-bottom: #000;
+    border: 1px;
+  }
+  .service-info.active {
+    display: block;
+  }
+
+  .service-info img{
+    display: block;
+    width: 20em;
+    height: auto;
+    margin: auto;
+  }
 
 .home{
     background: url(../images/home-bg.jpg) no-repeat scroll  center center;

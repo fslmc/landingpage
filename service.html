@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        .service_item {
+            cursor: pointer;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .s_item_icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+        } 
+        .modal-body img {
+  max-width: 100%;
+  max-height: 400px; /* adjust the height as needed */
+  margin: auto;
+  display: block;
+}     
+.list-unstyled > li > ul > li:before {
+  content: "- ";
+  margin-left: -10px;
+}
+    </style>
+</head>
+<body>
+      <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html"><img src="assets/images/optibis (1).png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="service.html">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <!--Business Section-->
+    <section id="business" class="business bg-grey roomy-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="head_title text-center fix">
+                        <h2 class="text-uppercase">Our Services</h2>
+                        <h5>We offer a wide range of services to meet your needs</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Service 1 -->
+                <div class="col-md-4">
+                    <div class="service_item sm-m-top-30" data-toggle="modal" data-target="#service1Modal">
+                        <div class="s_item_icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="s_item_text">
+                            <h3>Web Development</h3>
+                            <p>Buat rumah / kantor digitalmu sendiri
+                                jgn ketergantungan platform lain !</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-4">
+                    <div class="service_item sm-m-top-30" data-toggle="modal" data-target="#service2Modal">
+                        <div class="s_item_icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="s_item_text">
+                            <h3>Digital Admin</h3>
+                            <p>Developing high-quality websites and web applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-4">
+                    <div class="service_item sm-m-top-30" data-toggle="modal" data-target="#service3Modal">
+                        <div class="s_item_icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="s_item_text">
+                            <h3>Visual Identity</h3>
+                            <p>Providing solutions for online stores and e-commerce platforms.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more services as needed -->
+            </div>
+        </div>
+    </section>
+    <!-- End of Business section -->
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="service1Modal" tabindex="-1" role="dialog" aria-labelledby="service1ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="service1ModalLabel">Website</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Detailed information about Web Design -->
+             <img src="assets/images/1.jpeg" alt="">
+            Creating visually appealing and user-friendly designs for websites, including
+            <div class="row mt-5">
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="card-header">
+                      <h5 class="card-title">Website Profesional</h5>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-unstyled">
+                        <li><strong>Price:</strong> <span style="text-decoration: line-through;">5.5 Juta</span> <span>3.9 Juta</span></li>
+                        <li><strong>Features:</strong></li>
+                        <ul class="list-unstyled">
+                          <li>- Domain 1 tahun*</li>
+                          <li>- Hosting 1 tahun*</li>
+                          <li>- Premium template</li>
+                          <li>- SEO friendly ( mudah di cari di google)</li>
+                          <li>- CMS ( admin edit tambah hapus)</li>
+                          <li>- https secure portal</li>
+                          <li>- Max 30 halaman</li>
+                          <li>- Email @namawebsite</li>
+                          <li>- maintenance 1bln</li>
+                          <li>- chat whatapps</li>
+                          <li>- google analytic</li>
+                          <li>- english version</li>
+                        </ul>
+                        <li><strong>Bonus: </strong>
+                            1 kloningan website freemium
+Dibantu Set-up Konten sampai beres
+yang blm punya konten bisa pesan paket Visual identity dan content esential
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="card-header">
+                      <h5 class="card-title">Website Corporate / Database</h5>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-unstyled">
+                        <li><strong>Price:</strong><span style="text-decoration: line-through;">25 Juta</span> <span>15 Juta</span></li>
+                        <li><strong>Features:</strong></li>
+                        <ul class="list-unstyled">
+                          <li>- Domain 1 tahun*</li>
+                          <li>- Hosting 1 tahun*</li>
+                          <li>- Source Code</li>
+                          <li>- SEO friendly ( mudah di cari di google)</li>
+                          <li>- CMS ( admin edit tambah hapus)</li>
+                          <li>- Max 100 halaman</li>
+                          <li>- C-panel sendiri</li>
+                          <li>- https secure portal</li>
+                          <li>- Email @namawebsite</li>
+                          <li>- database customer</li>
+                          <li>- database vendor</li>
+                          <li>- multi akun ( log in staff max 5)</li>
+                          <li>- maintenance 3bln</li>
+                          <li>- chat whatapps</li>
+                          <li>- google analytic</li>
+                          <li>- english version</li>
+                          <li>- +2 fiture lain</li>
+                        </ul>
+                        <li><strong>Bonus: </strong>
+                            CRM (customer relationship management)
+                            3 kloningan website freemium
+                            Dibantu Set-up Konten sampai beres
+                            yang blm punya konten bisa pesan paket Visual identity dan content esential
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+<div class="modal fade" id="service2Modal" tabindex="-1" role="dialog" aria-labelledby="service2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="service2ModalLabel">Digital Admin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/images/2.jpeg" alt="">
+                <h4>Digital Maintenance Package</h4>
+                <p><strong>Normal price:</strong> 3.9jt</p>
+                <p><strong>Promo price:</strong> 2.9jt</p>
+                <p><em>Consistency is the key!</em></p>
+                <h5>Content Creation</h5>
+                <ul class="list-unstyled mt-3">
+                    <li>Ide konten 30</li>
+                    <li>Design grafis (feed/flyer) 15</li>
+                    <li>Micro video editing 15 (max 1mnt/ video)</li>
+                    <li>Caption 30</li>
+                    <li>Riset hastag</li>
+                    <li>Text article 1x</li>
+                </ul>
+                <h5>SMM (Social Media Management)</h5>
+                <ul class="list-unstyled mt-3">
+                    <li>Posting multi akun 1x / day</li>
+                    <li>Like, comment and share 1x /day</li>
+                    <li>Set up Meta ads</li>
+                </ul>
+                <h5>SEO Onpage</h5>
+                <ul class="list-unstyled mt-3">
+                    <li>Update (post/edit/delete website) 3x</li>
+                    <li>Post article 1x</li>
+                </ul>
+                <h5>SEO Offpage</h5>
+                <ul class="list-unstyled mt-3">
+                    <li>Posting Google My Business 1x</li>
+                    <li>Google review 1x</li>
+                    <li>Website cloning freemium 1x</li>
+                </ul>
+                <h5>Bonus</h5>
+                <ul class="list-unstyled mt-3">
+                    <li>Report Bulanan</li>
+                    <li>WA blast 1000 kontak relevan</li>
+                    <li>Set Up Google My Business</li>
+                </ul>
+                <p>Note: Jika belum punya website ataupun visual identity silakan pesan produk disini.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="service3Modal" tabindex="-1" role="dialog" aria-labelledby="service3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="service3ModalLabel">Visual Identity</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/3.jpeg" alt="">
+                    Creating a compelling visual identity that reflects your brand’s values and resonates with your audience.
+                    <ul class="list-unstyled mt-3">
+                        <li><strong>Branding:</strong> Crafting a unique brand identity that stands out in the market</li>
+                        <li><strong>Logo Design:</strong> Designing a memorable logo that represents your brand</li>
+                        <li><strong>Marketing Materials:</strong> Creating visually appealing marketing materials such as brochures, flyers, and business cards</li>
+                        <li><strong>Social Media Graphics:</strong> Designing cohesive graphics for your social media platforms</li>
+                        <li><strong>Packaging Design:</strong> Developing attractive and functional packaging designs</li>
+                    </ul>
+                    Our team works closely with you to ensure your visual identity aligns with your business goals and effectively communicates your brand message.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+<footer class="footer mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Contact Us</h5>
+          <p>
+            Phone: 555-555-5555<br>
+            Email: [info@mycompany.com](mailto:info@mycompany.com)<br>
+            Address: 123 Main St, Anytown, USA 12345
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h5>Follow Us</h5>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center">&copy; 2023 My Company. All rights reserved.</p>
+    </div>
+  </footer>
+    
+    <div class="main_footer bg-secondary text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">Made with <i class="fa fa-heart"></i> by <a target="_blank" href="https://bootstrapthemes.co">Bootstrap Themes</a> 2016. All Rights Reserved</p>
+            <p class="mb-0">Distributed <i class="fa fa-heart"></i> by <a target="_blank" href="https://themewagon.com/">Themewagon</a> 2016. All Rights Reserved</p>
+        </div>
+    </div>
+    
+
+    <!-- Add more modals for other services as needed -->
+
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
