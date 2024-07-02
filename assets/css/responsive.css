@@ -102,6 +102,14 @@ Author URI: http://www.xpeedstudio.com
 
 }
 
+/* Add this to your CSS file */
+@media (max-width: 768px) {
+    .navbar-collapse {
+       background-color: #ffffff; /* or any other color you prefer */
+     }
+
+   }
+
 
 
 
