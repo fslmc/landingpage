@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+.hero {
+  background-color: #b9b9b9;
+  position: relative;
+  height: 45vh;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero__title {
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  z-index: 1;
+}
+
+.cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #FF0068;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 3s ease-in forwards infinite;
+  }
+  
+  .cube:nth-child(2n) {
+    border-color: #d60e5e;
+  }
+  
+  .cube:nth-child(2) {
+    animation-delay: 0.5s;
+    left: 25vw;
+    top: 40vh;
+  }
+  
+  .cube:nth-child(3) {
+    animation-delay: 1s;
+    left: 75vw;
+    top: 50vh;
+  }
+  
+  .cube:nth-child(4) {
+    animation-delay: 1.5s;
+    left: 90vw;
+    top: 10vh;
+  }
+  
+  .cube:nth-child(5) {
+    animation-delay: 2s;
+    left: 10vw;
+    top: 85vh;
+  }
+  
+  .cube:nth-child(6) {
+    animation-delay: 2.5s;
+    left: 50vw;
+    top: 10vh;
+  }
+
+  .cube:nth-child(7) {
+    animation-delay: 5s;
+    left: 20vw;
+    top: 30vh;
+  }
+  
+  .cube:nth-child(8) {
+    animation-delay: 7s;
+    left: 60vw;
+    top: 20vh;
+  }
+  
+  .cube:nth-child(9) {
+    animation-delay: 9s;
+    left: 80vw;
+    top: 40vh;
+  }
+  
+  .cube:nth-child(10) {
+    animation-delay: 11s;
+    left: 30vw;
+    top: 60vh;
+  }
+  
+  @keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(5) rotate(360deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }

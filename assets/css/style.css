@@ -830,6 +830,49 @@ textarea::-ms-input-placeholder{
 /*End off Preloader*/
 
 
+/* Modal */
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+  }
+  .service-list li {
+    cursor: pointer;
+  }
+  .service-info {
+    display: none;
+  }
+  .service-info.active {
+    display: block;
+    border: 1px;
+  }
+  .service_item {
+          cursor: pointer;
+          padding: 20px;
+          border: 1px solid #ddd;
+          margin-bottom: 20px;
+          text-align: center;
+      }
+      .s_item_icon {
+          font-size: 50px;
+          margin-bottom: 10px;
+      } 
+      .modal-body img {
+max-width: 100%;
+max-height: 400px; /* adjust the height as needed */
+margin: auto;
+display: block;
+}     
+.list-unstyled > li > ul > li:before {
+content: "- ";
+margin-left: -10px;
+}
+
+    .modal-body{
+        font-size: 18px;
+    }
+
 /*
 Nav Menu style
 ==================*/
