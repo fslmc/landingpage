@@ -877,6 +877,19 @@ margin-left: -10px;
 Nav Menu style
 ==================*/
 
+.navbar {
+    background-color: transparent !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    transition: background-color 0.5s ease-in-out;
+  }
+
 .navbar-brand {
     padding: 25px 15px;
 }
