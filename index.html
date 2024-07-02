@@ -20,7 +20,7 @@
       
       <div class="hero"> 
         <div class="hero-left">
-          <div class="hero__title">OPTIMALISASI BISNIS DIGITAL</div>
+          <div class="hero__title"><span class="highlight">OPTI</span>MALISASI <span class="highlight">BIS</span>NIS DIGITAL</div>
         </div>
         <div class="hero-right">
           <!-- Add your logo here -->
@@ -41,44 +41,24 @@
 
   <!-- Homepage Content -->
 
-  <!-- About Us Section -->
-    <div class="container mt-5">
-      <h2>About Us</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-    </div>
-  
-
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-12">
-        <ul class="service-list">
-          <li data-service="service1" class="active">Website</li>
-          <li data-service="service2">Digital Admin</li>
-          <li data-service="service3">Visual Identity</li>
-        </ul>
-      </div>
-    </div>
-    <div class="row mt-5">
-      <div class="col-md-12">
-        <div id="service1" class="service-info active">
-          <h5>Website</h5>
-          <img src="assets/images/1.jpeg" alt="">
-          <p>Brief explanation of Service 1.</p>
-        </div>
-        <div id="service2" class="service-info">
-          <h5>Digital Admin</h5>
-          <img src="assets/images/2.jpeg" alt="">
-          <p>Brief explanation of Service 2.</p>
-        </div>
-        <div id="service3" class="service-info">
-          <h5>Visual Identity</h5>
-          <img src="assets/images/3.jpeg" alt="">
-          <p>Brief explanation of Service 3.</p>
+<!-- About Us Section -->
+<div class="container mt-5 mb-5" id="about-us">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <div class="container text-center mt-5">
+          <a href="#business-section" class="btn btn-primary">More About Our Service</a>
         </div>
       </div>
+    </div>
+    <div class="col-md-6">
+      <img src="assets/images/image.png" class="img-fluid" alt="">
     </div>
   </div>
+</div>
 
   <!--Business Section-->
   <div id="business-section"></div>
@@ -88,7 +68,7 @@
   <div id="modals"></div>
 
       <!-- Contact Us Section -->
-  <div class="container mt-5">
+  <div class="container mt-5" id="contact-us">
     <h2>Contact Us</h2>
     <form>
       <div class="form-group">
@@ -108,9 +88,6 @@
   </div>
 
   <!-- End Homepage Content -->
-  <div class="container text-center mt-5">
-    <a href="service.html" class="btn btn-primary">More About Our Service</a>
-  </div>
 
   <div id="footer"></div>
 
@@ -172,16 +149,20 @@ for (let i = 0; i < 20; i++) {
   cubeContainer.appendChild(cube);
 }
   </script>
-  <script>
-    $(document).ready(function() {
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 50) {
-          $('.navbar').addClass('scrolled');
-        } else {
-          $('.navbar').removeClass('scrolled');
-        }
-      });
-    });
-  </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  var navbar = $('.navbar');
+  var navbarHeight = navbar.outerHeight();
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > navbarHeight) {
+      navbar.addClass('scrolled');
+    } else {
+      navbar.removeClass('scrolled');
+    }
+  });
+});
+</script>
 </body>
 </html>

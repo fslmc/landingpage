@@ -888,6 +888,16 @@ Nav Menu style
   .navbar.scrolled {
     background-color: rgba(255, 255, 255, 0.8) !important;
     transition: background-color 0.5s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .header.scrolled + .container {
+    padding-top: 80px;
   }
 
 .navbar-brand {
@@ -921,6 +931,14 @@ Nav Menu style
     color:#fff;
 }
 
+/* About Us */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    font-size: large;
+  }
 
 /*
 Home Section style
