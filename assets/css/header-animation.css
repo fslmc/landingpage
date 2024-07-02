@@ -1,20 +1,34 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700");
 .hero {
-  background-color: #b9b9b9;
+  background: linear-gradient(to bottom, #b9b9b9, #cccccc, #ffffff);
   position: relative;
-  height: 45vh;
+  height: 50vh;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
+  display: flex; /* Add flexbox layout */
+  justify-content: space-between; /* Distribute elements horizontally */
+  align-items: center; /* Vertically center elements */
+}
+
+.hero-left {
+  flex-basis: 50%; /* Take 50% of the width */
+  text-align: center;
+}
+
+.hero-right {
+  flex-basis: 50%; /* increase the width of the right column */
+  text-align: center;
+}
+
+.hero-right img {
+  width: 200px; /* adjust the width to your desired size */
+  height: auto;
+  margin: 20px; /* add some margin to create space around the logo */
 }
 
 .hero__title {
-  color: #000000;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 50px;
-  z-index: 1;
+  color: #000000;
 }
 
 .cube {
