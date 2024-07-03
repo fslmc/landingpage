@@ -1174,6 +1174,47 @@ work Section style
     height: 300px;
 }*/
 
+/* carousel service */
+#serviceCarousel .carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  #serviceCarousel .carousel-item {
+    flex: 0 0 33.33%; 
+    margin: 0 10px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+  
+  #serviceCarousel .carousel-item.active {
+    transform: scale(1.2);
+    opacity: 1;
+    display: block;
+  }
+  
+  #serviceCarousel .carousel-control-prev,
+  #serviceCarousel .carousel-control-next {
+    width: 5%;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  .service_item {
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .s_item_icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+
 
 
 .main_product .carousel-control{
