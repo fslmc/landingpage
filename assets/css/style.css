@@ -1139,7 +1139,7 @@ Featured section style
         height: 25px;
         line-height: 25px;*/
     /*text-align: center;*/
-    background-color: #ddd;
+    background-color: #FF0068;
     border-radius: 50%;
 }
 
@@ -1202,6 +1202,12 @@ work Section style
     background-color: #333;
     color: #fff;
     border-radius: 10px;
+    height: 70px;
+  }
+
+  #serviceCarousel .carousel-control-prev:hover,
+  #serviceCarousel .carousel-control-next:hover{
+    background-color: #FF0068;
   }
   
   .service_item {
