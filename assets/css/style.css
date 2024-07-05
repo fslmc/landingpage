@@ -380,7 +380,7 @@ Button
     color: #fff;
     background-color: #FF0068;
     border:1px solid;
-    border-color: #00a885;
+    border-color: #FF0068;
 
 }
 .btn-primary:hover{
@@ -1188,6 +1188,8 @@ work Section style
     transition: transform 0.5s ease, opacity 0.5s ease;
     opacity: 0.5;
     transform: scale(0.8);
+    background-color: #FF0068;
+    color: white;
   }
   
   #serviceCarousel .carousel-item.active {
@@ -1203,6 +1205,9 @@ work Section style
     color: #fff;
     border-radius: 10px;
     height: 70px;
+    top: 50%; /* add this */
+    transform: translateY(-50%); /* add this */
+    position: absolute; /* add this */
   }
 
   #serviceCarousel .carousel-control-prev:hover,
@@ -1218,6 +1223,10 @@ work Section style
   .s_item_icon {
     font-size: 3rem;
     margin-bottom: 10px;
+  }
+
+  .s_item_text h3{
+    color: white;
   }
   
 
@@ -1286,8 +1295,21 @@ work Section style
     opacity: 1;
 }
 
+/* testimonial */
+#testimonials {
+    margin: 0; /* Add padding to the content */
+  }
 
+/* FAQ */
 
+  .faq-btn {
+    color: #FF0068;
+    border-color: #FF0068;
+  }
+  .faq-btn:hover {
+    background-color: #FF0068;
+    color: #ffffff;
+  }
 
 /*Test Section
 ======================*/

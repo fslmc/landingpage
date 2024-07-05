@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="assets/css/header-animation.css">
+  <link rel="stylesheet" href="assets/css/keunggulan.css">
 </head>
 <body>
 
@@ -30,10 +31,12 @@
           <div class="cube"></div>
           <div class="cube"></div>
           <div class="cube"></div>
-          <div class="hero__title"><span class="highlight">OPTI</span>MALISASI <span class="highlight">BIS</span>NIS DIGITAL
-            <br><h4>One-Stop Business Solution</h4>        
+          <div class="container-sm justify-content-center"><div class="hero__title">
+            <span><span class="highlight">OPTI</span>MALISASI <span class="highlight">BIS</span>NIS DIGITAL</span>
+            <br>
+            <span>One-Stop Business Solution</span>     
           </div>
-        </div>
+        </div></div>
         <div class="hero-right">
           <!-- Add your logo here -->
           <img src="assets/images/optibis.png" alt="Logo">
@@ -63,6 +66,49 @@
   </div>
 </div>
 
+<!-- Keunggulan Utama -->
+<div class="container">
+  <h2 style="text-align: left;">Keunggulan Utama</h2>
+<div class="container d-flex justify-content-center mt-5 mb-5">
+  <div class="custom-card">
+    <h3 class="custom-title">Speed</h3>
+    <div class="custom-bar">
+      <div class="custom-emptybar"></div>
+      <div class="custom-filledbar"></div>
+    </div>
+    <div class="custom-circle">      
+      <i class="fas fa-bolt fa-3x"></i>
+      <p class="custom-copy" style="font-size: 14px; text-align: center;">Experience lightning-fast performance with our optimized infrastructure, ensuring seamless interactions and rapid data processing.</p>
+    </div>
+  </div>
+  <div class="custom-card">
+    <h3 class="custom-title">Security</h3>
+    <div class="custom-bar">
+      <div class="custom-emptybar"></div>
+      <div class="custom-filledbar"></div>
+    </div>
+    <div class="custom-circle">      
+      <i class="fas fa-shield-alt fa-3x"></i>
+      <p class="custom-copy" style="font-size: 14px; text-align: center;">Rest assured with our robust security measures, protecting your data from unauthorized access and ensuring a safe online environment.</p>
+    </div>
+  </div>
+  <div class="custom-card">
+    <h3 class="custom-title">Integrity</h3>
+    <div class="custom-bar">
+      <div class="custom-emptybar"></div>
+      <div class="custom-filledbar"></div>
+    </div>
+    <div class="custom-circle">
+      <i class="fas fa-thumbs-up fa-3x"></i>
+      <p class="custom-copy" style="font-size: 14px; text-align: center;">Trust our commitment to transparency and accountability, ensuring that our services meet the highest standards of quality and reliability.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Testimonial -->
+<div id="testimonial"></div>
+
   <!--Business Section-->
   <div id="business-section"></div>
   <!-- End of Business section -->
@@ -89,6 +135,42 @@
       <button type="submit" class="btn btn-primary">Send</button>
     </form>
   </div>
+
+<!-- FAQ -->
+<div class="container mt-5 mb-5" id="faq">
+  <h2>FAQ</h2>
+  <div class="accordion" id="faqAccordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link faq-btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Apa itu OPTIBIS.ID?
+          </button>
+        </h2>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+        <div class="card-body">
+          OPTIBIS.ID adalah layanan transformasi digital untuk bisnis Anda.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link faq-btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Bagaimana cara menghubungi OPTIBIS.ID?
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+        <div class="card-body">
+          Anda dapat menghubungi kami melalui formulir kontak di atas.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- End Homepage Content -->
 
@@ -140,6 +222,14 @@
     document.getElementById('footer').innerHTML = html;
   });
   </script>
+  <!-- fetch testimonial -->
+   <script>
+        fetch('testimonial.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('testimonial').innerHTML = html;
+      });
+   </script>
   <script>
     const cubeContainer = document.getElementById('hero');
 

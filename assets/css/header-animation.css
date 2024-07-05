@@ -31,6 +31,17 @@
 .hero__title {
   font-size: 30px;
   color: #000000;
+  align-items: left;
+}
+
+.hero__title span {
+  margin-right: 5px; /* add a small margin between highlighter words */
+}
+
+.hero__title h4 {
+  text-align: left;
+  margin-left: 0;
+  margin-top: -10px;
 }
 
 .highlight {
