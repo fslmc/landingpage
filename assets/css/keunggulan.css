@@ -8,13 +8,15 @@
   }
   
   .custom-card {
-    height: 320px; /* Increased height to 320px */
-    width: 240px; /* Increased width to 240px */
+    height: 320px; /* Keep the height fixed for desktop */
+    width: 240px; /* Keep the width fixed for desktop */
     background-color: #FF0068;
+    flex: 0 0 240px; /* Add flexbox properties to make it responsive */
     border-radius: 12px; /* Increased border radius to 12px */
     box-shadow: -1rem 0 3rem white;
     transition: 0.4s ease-out;
     position: relative;
+    max-width: 100%;
   }
   
   .custom-card:not(:first-child) {
@@ -45,8 +47,9 @@
     position: absolute;
     top: 60px;
     left: 25px;
-    height: 7px; /* Increased height to 7px */
-    width: 180px; /* Increased width to 180px */
+    height: 7px;
+    width: 180px;
+    max-width: 100%; /* Increased width to 180px */
   }
   
   .custom-emptybar {
@@ -78,15 +81,33 @@
     flex-direction: column;
     align-items: center;
     top: 100px; /* Increased top margin to 100px */
+    max-width: 100%;
   }
   
   .custom-circle i {
     margin-bottom: 15px; /* Increased margin to 15px */
     font-size: 36px; /* Increased font size to 36px */
+    max-width: 100%;
   }
   
   .custom-copy {
-    font-size: 18px; /* Increased font size to 18px */
+    font-size: 18px;
     text-align: justify;
-    margin-top: 10px; /* Added margin top to 10px */
+    margin-top: 10px;
+    overflow: hidden; /* Add this to prevent text overflow */
+    text-overflow: ellipsis; /* Add this to show ellipsis for long text */
+  }
+
+  @media (max-width: 768px) {
+    .custom-card {
+      height: 250px; /* Adjust the height for tablets and smaller screens */
+      width: 200px; /* Adjust the width for tablets and smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .custom-card {
+      height: 200px; /* Adjust the height for phones */
+      width: 150px; /* Adjust the width for phones */
+    }
   }

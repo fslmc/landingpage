@@ -1202,7 +1202,7 @@ work Section style
   #serviceCarousel .carousel-control-next {
     width: 5%;
     background-color: #333;
-    color: #fff;
+    color: #FF0068;
     border-radius: 10px;
     height: 70px;
     top: 50%; /* add this */
